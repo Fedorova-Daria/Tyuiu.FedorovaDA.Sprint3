@@ -13,7 +13,7 @@ namespace Tyuiu.FedorovaDA.Sprint3.Task0.V6.Lib
             {
                 res *= (1 / Math.Pow(Math.Cos(5) + 1, 2));
             }
-            return res;
+            return Math.Round(res, 3);
         }
     }
 }
