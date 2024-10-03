@@ -16,7 +16,8 @@ namespace Tyuiu.FedorovaDA.Sprint3.Task1.V6.Lib
                 res += (Math.Pow(a, startValue) + 1) * Math.Sin(startValue);
                 startValue++;
             }
-            return Math.Round(res, 3);
+            res -= 1; 
+            return Math.Round(res, 3) ;
         }
     }
 }

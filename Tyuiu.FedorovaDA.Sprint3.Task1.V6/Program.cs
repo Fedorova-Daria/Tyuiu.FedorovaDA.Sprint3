@@ -11,14 +11,14 @@ namespace Tyuiu.FedorovaDA.Sprint3.Task1.V6
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
-            Console.WriteLine("* Тема: Оператор цикла for                                                *");
+            Console.WriteLine("* Тема: Оператор цикла while                                              *");
             Console.WriteLine("* Задание #1                                                              *");
             Console.WriteLine("* Вариант #6                                                              *");
             Console.WriteLine("* Выполнила: Федорова Дарья Артемовна | АСОиУб-24-1                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу используя цикл for,                                  *");
-            Console.WriteLine("* которая вычисляет произведение ряда по формуле                          *");
+            Console.WriteLine("* Написать программу используя цикл while,                                *");
+            Console.WriteLine("* которая вычисляет сумму ряда по формуле, при a=4.                       *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
