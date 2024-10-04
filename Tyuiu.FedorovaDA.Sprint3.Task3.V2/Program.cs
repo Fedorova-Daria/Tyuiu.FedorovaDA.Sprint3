@@ -1,6 +1,6 @@
-﻿using Tyuiu.FedorovaDA.Sprint3.Task2.V2.Lib;
+﻿using Tyuiu.FedorovaDA.Sprint3.Task3.V2.Lib;
 
-namespace Tyuiu.FedorovaDA.Sprint3.Task2.V2
+namespace Tyuiu.FedorovaDA.Sprint3.Task3.V2
 {
     internal class Program
     {
@@ -12,31 +12,33 @@ namespace Tyuiu.FedorovaDA.Sprint3.Task2.V2
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
-            Console.WriteLine("* Тема: Оператор цикла do-while                                           *");
-            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Тема: Оператор цикла foreach                                            *");
+            Console.WriteLine("* Задание #3                                                              *");
             Console.WriteLine("* Вариант #2                                                              *");
             Console.WriteLine("* Выполнила: Федорова Дарья Артемовна | АСОиУб-24-1                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу используя цикл do...while,                           *");
-            Console.WriteLine("* которая вычисляет произведение ряда по формуле                          *");
+            Console.WriteLine("* Используя цикл foreach подсчитать максимальное количество букв z,       *");
+            Console.WriteLine("* находящихся на соседних позициях в строке: asdzzz vfvfzz v gthvz        *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
+            
+            string value = "asdzzz vfvfzz v gthvz";
+            char ch = 'z';
 
-            int k = 1;
-            int stopValue = 7;
-
-            Console.WriteLine("Значение К =" + k);
-            Console.WriteLine("Количество периода = " + stopValue);
-
-            double res = ds.GetMultiplySeries(k, stopValue);
+            Console.WriteLine("Исходная строка" + value);
+            Console.WriteLine("Символ для подсчета" + ch);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Значение выражения = " + res);
+
+            Console.WriteLine("Количество символов 'z' = " + ds.GetMaxCharCount(value, ch));
+
+
+
         }
     }
 }
