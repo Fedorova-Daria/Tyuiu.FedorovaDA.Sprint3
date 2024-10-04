@@ -25,17 +25,17 @@ namespace Tyuiu.FedorovaDA.Sprint3.Task3.V2
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
             
-            string value = "asdzzz vfvfzz v gthvz";
+            string str = "asdzzz vfvfzz v gthvz";
             char ch = 'z';
 
-            Console.WriteLine("Исходная строка" + value);
+            Console.WriteLine("Исходная строка" + str);
             Console.WriteLine("Символ для подсчета" + ch);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Количество символов 'z' = " + ds.GetMaxCharCount(value, ch));
+            Console.WriteLine("Количество символов 'z' = " + ds.GetMaxCharCount(str, ch));
 
 
 

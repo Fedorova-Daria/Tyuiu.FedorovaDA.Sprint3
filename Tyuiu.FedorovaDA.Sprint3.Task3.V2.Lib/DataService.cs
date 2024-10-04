@@ -6,16 +6,35 @@ namespace Tyuiu.FedorovaDA.Sprint3.Task3.V2.Lib
     {
         public int GetMaxCharCount(string value, char item)
         {
-            int count = 0;
-
-            foreach (char ch in value)
+            int currentCount = 0;
+            int maxCount = 0;
+            string str = "asdzzz vfvfzz v gthvz";
+            
+            foreach (char c in str)
             {
-                if (ch == item)
+                if (c == 'z')
                 {
-                    count++;
+                    currentCount++; // Увеличиваем счетчик при нахождении 'z'
+                }
+                else
+                {
+                    if (currentCount > maxCount)
+                    {
+                        maxCount = currentCount; // Обновляем максимум, если текущий больше
+                    }
+                    currentCount = 0; // Сбрасываем счетчик для 'z'
                 }
             }
-            return count;
+
+            // Проверяем в конце, чтобы учесть случаи, когда строка заканчивается 'z'
+            if (currentCount > maxCount)
+            {
+                maxCount = currentCount;
+            }
+
+            return maxCount;
         }
+
     }
 }
+
