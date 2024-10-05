@@ -10,13 +10,13 @@ namespace Tyuiu.FedorovaDA.Sprint3.Task1.V6.Lib
             
             startValue = 1;
             stopValue = 10;
-            double res = 1;
+            double res = 0;
             while (startValue <= stopValue)
             {
                 res += (Math.Pow(a, startValue) + 1) * Math.Sin(startValue);
                 startValue++;
             }
-            res -= 1; 
+            
             return Math.Round(res, 3) ;
         }
     }
