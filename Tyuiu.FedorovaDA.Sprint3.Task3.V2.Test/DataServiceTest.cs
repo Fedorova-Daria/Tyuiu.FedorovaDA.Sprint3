@@ -1,0 +1,17 @@
+using Tyuiu.FedorovaDA.Sprint3.Task3.V2.Lib;
+namespace Tyuiu.FedorovaDA.Sprint3.Task3.V2.Test
+{
+    [TestClass]
+    public class DataServiceTest
+    {
+        [TestMethod]
+        public void TestMethod1()
+        {
+            DataService ds = new DataService();
+            string str = "asdzzz vfvfzz v gthvz";
+            char ch = 'z';
+            int res = ds.GetMaxCharCount(str, ch);
+            Assert.IsTrue(res == 3);
+        }
+    }
+}

@@ -6,8 +6,7 @@ namespace Tyuiu.FedorovaDA.Sprint3.Task0.V6.Lib
     {
         public double GetMultiplySeries(int startValue, int stopValue)
         {
-            startValue = 1;
-            stopValue = 15;
+            
             double res = 1;
             for (double i = startValue; i <= stopValue; i++)
             {
